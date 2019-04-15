@@ -1,4 +1,4 @@
-from douyin.common.urls import URL
+from douyinspider.url.urls import URL
 from selenium import webdriver
 import requests
 import json
@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 # 失败
 
 def getParams(user_id):
-    url="https://www.douyin.com/share/user/{}".format(user_id)
+    url="https://www.douyinspider.com/share/user/{}".format(user_id)
     headers={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
     # 获得dytk
     reponse = requests.get(url,headers=headers)
@@ -41,7 +41,7 @@ def getParams(user_id):
 
 
 def getParams2(user_id):
-    url="https://www.douyin.com/share/user/{}".format(user_id)
+    url="https://www.douyinspider.com/share/user/{}".format(user_id)
     driver = webdriver.Chrome()
     driver.implicitly_wait(10)
     driver.maximize_window()
@@ -75,7 +75,7 @@ def download_video(path, url):
 
 def get_favor_video(headers, params):
     # 请求数据
-    furl = "https://www.douyin.com/aweme/v1/aweme/favorite/"
+    furl = "https://www.douyinspider.com/aweme/v1/aweme/favorite/"
     jsonstr = requests.get(furl, params=params, headers=headers).json()
     # 多次请求会出现正确数据
     # aweme_list = jsonstr.get('aweme_list')

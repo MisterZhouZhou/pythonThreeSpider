@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c956981d-1a2a-4c2d-9513-0fd9df6a9c2e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/douyin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/douyin.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/download/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/download/downloader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/download/file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/hot/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/hot/billboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/hot/category.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/address.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/hot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/music.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/topic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/structures/video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/url/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/utils/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/utils/downloaderUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/utils/fetch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/douyinspider/utils/tranform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/douyin/common/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/douyin/douyin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/douyin/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/douyinspider/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/douyin/index2.py" beforeDir="false" afterPath="$PROJECT_DIR$/douyinspider/index2.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/hot/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/download/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="54" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="downloader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/download/downloader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/download/file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="billboard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/hot/billboard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/hot/category.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="douyin.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/douyinspider/douyin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="66" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="downloaderUtil.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/utils/downloaderUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/utils/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/douyinspider/url/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>URL</find>
+      <find>wait_random_max</find>
+      <find>need_retry</find>
+      <find>version_code</find>
+      <find>fetch_timeout</find>
+      <find>1540535782</find>
+      <find>challenge</find>
+      <find>json</find>
+      <find>category_list</find>
+      <find>max</find>
+      <find>data_to_topic</find>
+      <find>challenge_info</find>
+      <find>aweme_info</find>
+      <find>ch_id</find>
+      <find>re</find>
+      <find>desc</find>
+      <find>play_i</find>
+      <find>billboard</find>
+      <find>cursor</find>
+      <find>aweme</find>
+      <find>category</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/douyin/douyin.txt" />
+        <option value="$PROJECT_DIR$/douyin/urls.py" />
+        <option value="$PROJECT_DIR$/douyin/common/urls.py" />
+        <option value="$PROJECT_DIR$/douyin/common/__init__.py" />
+        <option value="$PROJECT_DIR$/douyin/url/urls.py" />
+        <option value="$PROJECT_DIR$/douyin/douyin.py" />
+        <option value="$PROJECT_DIR$/douyin/url/__init__.py" />
+        <option value="$PROJECT_DIR$/douyin/index/douyin.py" />
+        <option value="$PROJECT_DIR$/douyinspider/index/douyin.py" />
+        <option value="$PROJECT_DIR$/douyinspider/config.py" />
+        <option value="$PROJECT_DIR$/douyinspider/utils/fetch.py" />
+        <option value="$PROJECT_DIR$/douyinspider/utils/common.py" />
+        <option value="$PROJECT_DIR$/douyinspider/structures/__init__.py" />
+        <option value="$PROJECT_DIR$/douyinspider/structures/address.py" />
+        <option value="$PROJECT_DIR$/douyinspider/structures/user.py" />
+        <option value="$PROJECT_DIR$/douyinspider/structures/music.py" />
+        <option value="$PROJECT_DIR$/douyinspider/structures/base.py" />
+        <option value="$PROJECT_DIR$/douyinspider/douyin.txt" />
+        <option value="$PROJECT_DIR$/douyinspider/structures/topic.py" />
+        <option value="$PROJECT_DIR$/douyinspider/hot/trend.py" />
+        <option value="$PROJECT_DIR$/douyinspider/hot/__init__.py" />
+        <option value="$PROJECT_DIR$/douyinspider/hot/billboard.py" />
+        <option value="$PROJECT_DIR$/douyinspider/structures/video.py" />
+        <option value="$PROJECT_DIR$/douyinspider/utils/tranform.py" />
+        <option value="$PROJECT_DIR$/douyinspider/url/urls.py" />
+        <option value="$PROJECT_DIR$/douyinspider/hot/category.py" />
+        <option value="$PROJECT_DIR$/douyinspider/download/downloader.py" />
+        <option value="$PROJECT_DIR$/douyinspider/download/file.py" />
+        <option value="$PROJECT_DIR$/douyinspider/download/__init__.py" />
+        <option value="$PROJECT_DIR$/douyinspider/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/douyinspider/utils/downloaderUtil.py" />
+        <option value="$PROJECT_DIR$/douyinspider/douyin.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="197" />
+    <option name="width" value="1363" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="douyinspider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="douyinspider" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="douyinspider" type="462c0819:PsiDirectoryNode" />
+              <item name="download" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="douyinspider" type="462c0819:PsiDirectoryNode" />
+              <item name="hot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="douyinspider" type="462c0819:PsiDirectoryNode" />
+              <item name="url" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="douyinspider" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonThreeSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonThreeSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myAddSourceRoots" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/douyinspider" />
+      <recent name="$PROJECT_DIR$/douyin/index" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/douyin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.douyin">
+    <configuration name="douyin" type="PythonConfigurationType" factoryName="Python">
+      <module name="pythonThreeSpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/douyinspider/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/douyinspider/douyin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="douyin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonThreeSpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/douyin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/douyin/index/douyin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="index2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonThreeSpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/douyin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/douyin/index2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.douyin" />
+      <item itemvalue="Python.index2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.douyin" />
+        <item itemvalue="Python.index2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c956981d-1a2a-4c2d-9513-0fd9df6a9c2e" name="Default" comment="" />
+      <created>1555298107175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555298107175</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="40" y="29" width="1363" height="877" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962743" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19358975" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3423077" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24962743" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="0" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32948717" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/douyin/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/url/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/index2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/utils/fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/address.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/utils/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/music.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/1437855905/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="767" column="8" selection-start-line="767" selection-start-column="8" selection-end-line="767" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/hot.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/douyin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/topic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/structures/video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/utils/tranform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/hot/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/url/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/download/file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/download/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/hot/billboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/hot/category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/download/downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/utils/downloaderUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douyinspider/douyin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="66" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

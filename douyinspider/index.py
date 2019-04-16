@@ -6,7 +6,7 @@ import re
 # 获取组装参数
 # 93515402600 86371592618
 def getParams(user_id):
-    url="https://www.iesdouyin.com/share/user/93515402600"
+    url="https://www.iesdouyin.com/share/user/{}".format(user_id)
     headers={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
     # 获得dytk
     reponse = requests.get(url,headers=headers)
@@ -14,10 +14,10 @@ def getParams(user_id):
     dytk= re.search("dytk: '(.*?)'",reponse.text).group(1)
     # 组装数据
     params={
-        'user_id': '93515402600',
-        'count':'0',
+        'user_id': user_id,
+        'count':'21',
         'max_cursor': '0',
-        'aid': '0',
+        'aid': '1128',
         'dytk': dytk
     }
     return headers,params
@@ -32,7 +32,6 @@ def get_favor_video(headers, params):
         # 多次请求会出现正确数据
         #修改全局变量的值
         aweme_list = jsonstr.get('aweme_list')
-        print(jsonstr)
         if aweme_list != None and len(aweme_list)!=0:
             break
     return aweme_list
@@ -53,7 +52,7 @@ def getVideoListInfo(aweme_list):
         print('===',title,'.mp4')
 
 if __name__ == "__main__":
-    headers,params = getParams(86371592618)
+    headers,params = getParams(75984155221)
     # 获取喜欢的视频
     aweme_list = get_favor_video(headers,params)
     print('========\n')
@@ -96,7 +95,7 @@ if __name__ == "__main__":
 # http://v6-dy.ixigua.com/2f37e27aec064d4d3e467c32eba457d6/5cb2ac80/video/m/220e966aef37951465c9930de5f9839da1d1161d62cf000004f1035df09f/?rc=ajR5bmprZjQ4bDMzN2kzM0ApQHRAb0Q6OjgzNzozNDM2Mzc3PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QDBicGRrXzQ2bV8tLTAtMHNzLW8jbyMyLS8uLS0vLS0yMS4uLS4vaTpiLW8jOmAvbyNtbCtiK2p0OiMvLl4%3D
 
 
-# https://aweme.snssdk.com/aweme/v1/playwm/?video_id=6610679501925911815
+# https://aweme.snssdk.com/aweme/v1/playwm/?video_id=6610679501925911815&line=0
 
 # http://v5-dy.ixigua.com/56722ae2389b47ebf960378639b2213d/5cb30c82/video/m/2208f59a07afe384892bf5fde3063959ea91161cf32d00006f47b50ff73a/?rc=M3Q2PGlndHl1bDMzOmkzM0ApQHRAbzo8OTQzOzgzNDQ2Ojc3PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QGxsYGFsMTZual8tLV4tL3NzLW8jbyMtNDAwLS0vLS0uMC4uLS4vaTpiLW8jOmAvbyNtbCtiK2p0OiMvLl4%3D
 # https://www.iesdouyin.com/share/video/6610679501925911815/?u_code=hjdm8k44&region=CN&mid=6610679524466101005&schema_type=1&object_id=6610679501925911815&utm_campaign=client_scan_share&app=aweme&utm_medium=ios&tt_from=scan_share&iid=45561030398&utm_source=scan_share

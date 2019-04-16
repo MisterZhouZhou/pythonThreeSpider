@@ -86,6 +86,28 @@ def data_to_music(data):
         owner_id=owner_id,
         owner_name=owner_name,
         cover_url=cover_url
+
+    ) if id else None
+
+
+
+def data_to_word(data):
+    """
+    transfer data to word object
+    :param data:
+    :return:
+    """
+    word_covers = data.get('word_covers', {}).get('url_list', [])
+    word = data.get('word')
+    hot_value = data.get('hot_value')
+    label = data.get('label')
+    position = data.get('position')
+    return Word(
+        word_covers=word_covers,
+        word=word,
+        hot_value=hot_value,
+        label=label,
+        position=position
     ) if id else None
 
 
@@ -103,8 +125,9 @@ def data_to_user(data):
     gender = data.get('gender')
     birthday = data.get('birthday')
     create_time = parse_datetime(data.get('create_time'))
-    verify = bool(data.get('custom_verify').strip())
-    verify_info = data.get('custom_verify').strip()
+    if data.get('custom_verify') != None:
+        verify = bool(data.get('custom_verify').strip())
+        verify_info = data.get('custom_verify').strip()
     return User(
         id=id,
         alias=alias,

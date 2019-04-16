@@ -1,6 +1,8 @@
 from douyinspider.hot import category,billboard
 from douyinspider.download import Downloader,getDownloadPath
 from douyinspider.structures import Topic,Video
+from douyinspider.person import favorite,post
+
 
 # 下载分类视频
 def downloadCategory():
@@ -21,3 +23,22 @@ def downloadBillboard():
     for item in billboard():
         if isinstance(item, Video):
             downloader.download_mp4(item.play_url,item.id)
+
+
+
+# 下载用户喜欢的视频
+def downloadFavorite(user_id, user_name):
+    current_path = getDownloadPath('favorite')
+    downloader = Downloader(current_path)
+    for item in favorite(user_id, user_name):
+        if isinstance(item, Video):
+            downloader.download_mp4(item.play_url, item.id)
+
+
+# 下载用户提交的视频
+def downloadPost(user_id, user_name):
+    current_path = getDownloadPath('post')
+    downloader = Downloader(current_path)
+    for item in post(user_id, user_name):
+        if isinstance(item, Video):
+            downloader.download_mp4(item.play_url, item.id)

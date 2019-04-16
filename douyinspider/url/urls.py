@@ -31,6 +31,11 @@ class URL(object):
     def category_list(cls):
         return cls.BaseApiURL + "category/list/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&count=10&cursor=30&mas=017cf50c73008bad543b552ca0369777473911b0e7c8fbc462a721&as=a195ab9d916dfba5629896&ts=1540535761"
 
+    # 音乐榜分类(成功)
+    @classmethod
+    def music_collection_url(cls):
+        return cls.BaseApiURL + "music/collection/?iid=34451996099&device_id=52982221132&os_api=18&app_name=aweme&channel=App%20Store&idfa=00000000-0000-0000-0000-000000000000&device_platform=iphone&build_number=18504&vid=386F3505-7B99-444A-845A-E5EEA12C5936&openudid=e01e26ddeb822fd95f6599de43b7547cfe1a26ea&device_type=iPhone7,2&app_version=1.8.5&version_code=1.8.5&os_version=11.3&screen_width=750&aid=1128&ac=WIFI&mas=00dfe1ffff8907b970da90b3e7cf26a0ff84e922cf91ee92e768de&as=a12522c184a0fb66257265&ts=1528112644"
+
     # 挑战
     @classmethod
     def challenge(cls):
@@ -40,7 +45,8 @@ class URL(object):
     # 音频
     @classmethod
     def music2video_url(cls):
-        return cls.BaseApiURL + "music/aweme/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&cursor=0&music_id=6606196836371794691&pull_type=2&count=18&type=6&mas=0143c9f3d621b358454717211b3d5b91be242eaad18243a010d6a8&as=a1756b5dab96bb15627918&ts=1540535659"
+        return 'https://api.amemv.com/aweme/v1/music/aweme/'
+        #return cls.BaseApiURL + "music/aweme/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&cursor=0&music_id=6606196836371794691&pull_type=2&count=18&type=6&mas=0143c9f3d621b358454717211b3d5b91be242eaad18243a010d6a8&as=a1756b5dab96bb15627918&ts=1540535659"
 
 
     # 话题

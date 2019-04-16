@@ -66,7 +66,7 @@ def data_to_video(data):
         address=address
     ) if id else None
 
-
+# 热搜数据转音乐model
 def data_to_music(data):
     """
     transfer data to music object
@@ -75,7 +75,8 @@ def data_to_music(data):
     """
     id = data.get('mid')
     name = data.get('title')
-    play_url = get_music_url(data.get('play_url', {}).get('url_list', []))
+    play_urls = data.get('play_url', {}).get('url_list', [])
+    play_url = get_music_url(play_urls)
     owner_id = data.get('owner_id')
     owner_name = data.get('owner_nickname')
     cover_url = first(data.get('cover_large', {}).get('url_list', []))
@@ -83,12 +84,37 @@ def data_to_music(data):
         id=id,
         name=name,
         play_url=play_url,
+        play_urls=play_urls,
         owner_id=owner_id,
         owner_name=owner_name,
         cover_url=cover_url
 
     ) if id else None
 
+# 音乐分类数据转音乐model
+def data_collection_to_music(data):
+    """
+    transfer data to music object
+    :param data:
+    :return:
+    """
+    id = data.get('mid')
+    name = data.get('title')
+    play_urls = data.get('play_url', {}).get('url_list', [])
+    play_url = get_music_url(play_urls)
+    owner_id = data.get('owner_id')
+    owner_name = data.get('owner_nickname')
+    cover_url = first(data.get('cover_large', {}).get('url_list', []))
+    return Music(
+        id=id,
+        name=name,
+        play_url=play_url,
+        play_urls=play_urls,
+        owner_id=owner_id,
+        owner_name=owner_name,
+        cover_url=cover_url
+
+    ) if id else None
 
 
 def data_to_word(data):

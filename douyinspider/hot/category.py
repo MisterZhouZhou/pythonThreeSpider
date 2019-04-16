@@ -55,5 +55,5 @@ def category(maxCursor=50):
         else:
             if offset > maxCursor: # 不想拉取很多可以设置这个参数
                 break
-            offset += 10
+            offset = result.get('cursor')
     return final

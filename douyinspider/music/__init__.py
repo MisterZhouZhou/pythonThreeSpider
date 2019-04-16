@@ -1,0 +1,1 @@
+from douyinspider.music.musiccollection import music_collection

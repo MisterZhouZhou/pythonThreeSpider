@@ -9,6 +9,11 @@ class URL(object):
     def favorite_url(cls):
         return "https://www.iesdouyin.com/aweme/v1/aweme/favorite/"
 
+    # ANOYI上抖音用户信息列表（成功)
+    @classmethod
+    def person_list_url(cls):
+        return "https://anoyi.com/dy/top"
+
     # 用户提交的视频（成功)
     @classmethod
     def person_post_url(cls):
@@ -35,6 +40,11 @@ class URL(object):
     @classmethod
     def music_collection_url(cls):
         return cls.BaseApiURL + "music/collection/?iid=34451996099&device_id=52982221132&os_api=18&app_name=aweme&channel=App%20Store&idfa=00000000-0000-0000-0000-000000000000&device_platform=iphone&build_number=18504&vid=386F3505-7B99-444A-845A-E5EEA12C5936&openudid=e01e26ddeb822fd95f6599de43b7547cfe1a26ea&device_type=iPhone7,2&app_version=1.8.5&version_code=1.8.5&os_version=11.3&screen_width=750&aid=1128&ac=WIFI&mas=00dfe1ffff8907b970da90b3e7cf26a0ff84e922cf91ee92e768de&as=a12522c184a0fb66257265&ts=1528112644"
+
+    # 音乐榜分类中音乐list(成功)
+    @classmethod
+    def music_collection_list(cls, mc_id):
+        return cls.BaseApiURL + "music/list/?iid=34451996099&device_id=52982221132&os_api=18&app_name=aweme&channel=App%20Store&idfa=00000000-0000-0000-0000-000000000000&device_platform=iphone&build_number=18504&vid=386F3505-7B99-444A-845A-E5EEA12C5936&openudid=e01e26ddeb822fd95f6599de43b7547cfe1a26ea&device_type=iPhone7,2&app_version=1.8.5&version_code=1.8.5&os_version=11.3&screen_width=750&aid=1128&ac=WIFI&cursor=0&mc_id="+str(mc_id)
 
     # 挑战
     @classmethod

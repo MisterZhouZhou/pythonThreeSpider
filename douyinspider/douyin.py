@@ -1,8 +1,8 @@
 import requests
-from douyinspider.utils.downloaderUtil import downloadBillboard, downloadCategory, downloadFavorite, downloadPost
+from douyinspider.utils.downloaderUtil import downloadBillboard, downloadCategory, downloadFavorite, downloadPost, downloadMusicCollection
 from douyinspider.hot import hotSearchWord,getVideoOfHotSearchWord
-from douyinspider.structures import Word,Video
-from douyinspider.person import favorite,post
+from douyinspider.structures import Word,Video,MusicCollection,Music
+from douyinspider.person import favorite,post, person
 from douyinspider.music import music_collection
 
 from douyinspider.utils import fetch
@@ -29,16 +29,26 @@ def get_aweme_list():
         if result.get('has_more') != 1:
             break
 
+
 if __name__ == '__main__':
-    music_collection()
+
+    # for musicCollection in music_collection():
+    #     if isinstance(musicCollection, MusicCollection):
+    #         print(musicCollection.mc_name)
+    #         musics = musicCollection.mc_musics if musicCollection.mc_musics else []
+    #         for music in musics:
+    #             if isinstance(music, Music):
+    #                print(music.name,'===',music.play_url)
 
     # get_aweme_list()
     # downloadCategory()
-
+    # 拉取抖音用户列表
+    person()
     # 下载陈赫喜欢的视频
     # downloadFavorite(84990209480, '陈赫')
     # 下载陈赫上传的视频
     # downloadPost(84990209480, '陈赫')
+    # downloadPost(88445518961, 'Dear-迪丽热巴')
 
 
 

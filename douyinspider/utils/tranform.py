@@ -168,6 +168,22 @@ def data_to_user(data):
     ) if id else None
 
 
+# ANOYI用户转换model
+def data_Anoyi_to_user(data):
+    """
+    transfer data to user object
+    :param data:
+    :return:
+    """
+    id = data.get('id')
+    name = data.get('name')
+    return User(
+        id=id,
+        name=name
+    ) if id else None
+
+
+
 def data_to_address(data):
     """
     transfer data to address object

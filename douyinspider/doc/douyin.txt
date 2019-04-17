@@ -18,12 +18,33 @@ https://api.amemv.com/aweme/v1/music/aweme/?ac=WIFI&iid=46961748949&device_id=58
 6、个人喜欢
 https://www.iesdouyin.com/aweme/v1/aweme/favorite/
 
-(可用)
-# url = 'https://api.amemv.com/aweme/v1/hotsearch/aweme/billboard/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&mas=01e3e5cef0de029bfcdd34f97a802bb868733f3265261a5cdb072e&as=a13500cd74892b29d04593&ts=1540360596'
-# url = 'https://api.amemv.com/aweme/v1/hot/search/list/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&detail_list=0&mas=01b4002e3d345720d85d1983fe6b328535431c67b1f365be1f2f38&as=a1e5000df9532bbfa03287&ts=1540362041'
-# url = 'https://api.amemv.com/aweme/v1/category/list/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&count=10&cursor=30&mas=017cf50c73008bad543b552ca0369777473911b0e7c8fbc462a721&as=a195ab9d916dfba5629896&ts=1540535761'
+7、热门搜索列表(可用)
+https://api.amemv.com/aweme/v1/hot/search/list/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&detail_list=0&mas=01b4002e3d345720d85d1983fe6b328535431c67b1f365be1f2f38&as=a1e5000df9532bbfa03287&ts=1540362041'
+
+8、分类视频列表(可以用)
+url = 'https://api.amemv.com/aweme/v1/category/list/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&count=10&cursor=30&mas=017cf50c73008bad543b552ca0369777473911b0e7c8fbc462a721&as=a195ab9d916dfba5629896&ts=1540535761'
+
+9、音乐分类(可用)-可用获取music id----mc_id=mc['id']
+https://api.amemv.com/aweme/v1/music/collection/?iid=34451996099&device_id=52982221132&os_api=18&app_name=aweme&channel=App%20Store&idfa=00000000-0000-0000-0000-000000000000&device_platform=iphone&build_number=18504&vid=386F3505-7B99-444A-845A-E5EEA12C5936&openudid=e01e26ddeb822fd95f6599de43b7547cfe1a26ea&device_type=iPhone7,2&app_version=1.8.5&version_code=1.8.5&os_version=11.3&screen_width=750&aid=1128&ac=WIFI&mas=00dfe1ffff8907b970da90b3e7cf26a0ff84e922cf91ee92e768de&as=a12522c184a0fb66257265&ts=1528112644
+音乐分类详情列表(可用)-mc_id为上面的music id
+https://api.amemv.com/aweme/v1/music/list/?iid=34451996099&device_id=52982221132&os_api=18&app_name=aweme&channel=App%20Store&idfa=00000000-0000-0000-0000-000000000000&device_platform=iphone&build_number=18504&vid=386F3505-7B99-444A-845A-E5EEA12C5936&openudid=e01e26ddeb822fd95f6599de43b7547cfe1a26ea&device_type=iPhone7,2&app_version=1.8.5&version_code=1.8.5&os_version=11.3&screen_width=750&aid=1128&ac=WIFI&cursor=0&mc_id=865
+<a href="/dy/80812090202"><h4 class="card-title">Angelababy</h4></a>
+
+10、抖音昵称              抖音id
+    陈赫                  84990209480
+    Dear-迪丽热巴         88445518961
+    莉哥o3o               57720812347
+    ❤️会说话的刘二豆❤️      58558645805
+    一禅小和尚             76055758243
+    Angelababy            80812090202
+    。。。。。
+    详情看doc/douyinperson.txt
 
 
+
+
+
+(待爬取)
 # url = 'https://api.amemv.com/aweme/v1/search/item/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&keyword=%E4%B8%89%E5%BA%AD%E4%BA%94%E7%9C%BC%E6%A0%87%E5%87%86%E8%84%B8&count=12&offset=60&source=video_search&hot_search=1&mas=01dd88c948b345ad9d54935e1c9cb91e2e52195833e37a0d4a04ee&as=a1856aed60b72b4d628753&ts=1540533616'
 
 # url = 'https://api.amemv.com/aweme/v1/music/aweme/?ac=WIFI&iid=46961748949&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=29101&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=2.9.1&version_code=2.9.1&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&cursor=0&music_id=6606196836371794691&pull_type=2&count=18&type=6&mas=0143c9f3d621b358454717211b3d5b91be242eaad18243a010d6a8&as=a1756b5dab96bb15627918&ts=1540535659'
@@ -34,7 +55,5 @@ https://www.iesdouyin.com/aweme/v1/aweme/favorite/
 
 url = 'https://api.amemv.com/aweme/v1/challenge/aweme/?ac=WIFI&iid=49530073634&device_id=58097798464&os_api=18&app_name=aweme&channel=App%20Store&idfa=B6B7BF1B-AADD-42E6-83AB-D29C93620305&device_platform=iphone&build_number=31006&vid=5A56818A-EC4B-4C9B-843F-881E99603F5A&openudid=825a48a41a70c4182b21cc442993c6bf6f1ed6e6&device_type=iPhone9,2&app_version=3.1.0&js_sdk_version=1.3.0.1&version_code=3.1.0&os_version=12.0&screen_width=1242&aid=1128&pass-region=1&query_type=0&cursor=0&ch_id=1615917132956695&count=18&pull_type=2&type=5&mas=019a446388982299eccaa62c24afeab1fa2c9ae7543ea3cb48af31&as=a16575fd5f15fbfaad0086&ts=1541233247'
 
-音乐分类(可用)-可用获取music id----mc_id=mc['id']
-https://api.amemv.com/aweme/v1/music/collection/?iid=34451996099&device_id=52982221132&os_api=18&app_name=aweme&channel=App%20Store&idfa=00000000-0000-0000-0000-000000000000&device_platform=iphone&build_number=18504&vid=386F3505-7B99-444A-845A-E5EEA12C5936&openudid=e01e26ddeb822fd95f6599de43b7547cfe1a26ea&device_type=iPhone7,2&app_version=1.8.5&version_code=1.8.5&os_version=11.3&screen_width=750&aid=1128&ac=WIFI&mas=00dfe1ffff8907b970da90b3e7cf26a0ff84e922cf91ee92e768de&as=a12522c184a0fb66257265&ts=1528112644
-音乐分类详情列表(可用)-mc_id为上面的music id
-https://api.amemv.com/aweme/v1/music/list/?iid=34451996099&device_id=52982221132&os_api=18&app_name=aweme&channel=App%20Store&idfa=00000000-0000-0000-0000-000000000000&device_platform=iphone&build_number=18504&vid=386F3505-7B99-444A-845A-E5EEA12C5936&openudid=e01e26ddeb822fd95f6599de43b7547cfe1a26ea&device_type=iPhone7,2&app_version=1.8.5&version_code=1.8.5&os_version=11.3&screen_width=750&aid=1128&ac=WIFI&cursor=0&mc_id=865
+
+

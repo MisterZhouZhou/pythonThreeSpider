@@ -6,3 +6,4 @@ from douyinspider.structures.video import Video
 from douyinspider.structures.address import Address
 from douyinspider.structures.topic import Topic
 from douyinspider.structures.word import Word
+from douyinspider.structures.music_collection import MusicCollection

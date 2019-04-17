@@ -2,6 +2,8 @@
 from douyinspider.utils import fetch
 from douyinspider.url.urls import URL
 from douyinspider.config import common_headers
+from douyinspider.utils.tranform import data_collection_to_music
+from douyinspider.structures import MusicCollection
 
 # from contextlib import closing
 # import requests, json, time, re, os, sys, time
@@ -86,7 +88,33 @@ from douyinspider.config import common_headers
 #                 print('\n')
 #         print('下载完成!')
 
+
+def get_music_urls(mc_id):
+    musics = []
+    result = fetch(URL.music_collection_list(mc_id), headers=common_headers, verify=False)
+    music_list = result.get('music_list', [])
+    for item in music_list:
+         music = data_collection_to_music(item)
+         musics.append(music)
+    return musics
+
+
+
 # 获取音乐榜数据
 def music_collection():
     result = fetch(URL.music_collection_url(), headers=common_headers, verify=False)
-    print(result)
+    mc_list = result.get('mc_list', [])
+    collection_list = []
+    for mc in mc_list:
+        mc_id = mc['id']
+        mc_name = mc['mc_name']
+        print('正在拉取', mc_name, '...')
+        mc_musics = get_music_urls(mc_id)
+        musicCollection = MusicCollection(
+            mc_id=mc_id,
+            mc_name=mc_name,
+            mc_musics=mc_musics
+        ) if id else None
+        collection_list.append(musicCollection)
+        print(mc_name, '拉取完毕')
+    return collection_list

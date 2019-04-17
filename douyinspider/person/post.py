@@ -33,7 +33,6 @@ def get_aweme_list(queryParams):
         if max_cursor:
             queryParams['max_cursor'] = str(max_cursor)
         result = fetch(URL.person_post_url(), headers=person_post_headers, params=queryParams, verify=False)
-        print(result)
         aweme_list = result.get('aweme_list', [])
         if aweme_list != None and len(aweme_list)!=0:
             user_video_list.extend(aweme_list)

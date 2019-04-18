@@ -25,6 +25,7 @@ def get_aweme_list():
 
 
 if __name__ == '__main__':
+    # downloadCategory()
     get_aweme_list()
 
 

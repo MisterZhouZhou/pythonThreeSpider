@@ -35,6 +35,9 @@ def data_to_video(data):
     comment_count = statistics.get('comment_count')
     share_count = statistics.get('share_count')
     id = statistics.get('aweme_id')
+    if id == None:
+        id = data.get('aweme_id')
+
     desc = data.get('desc')
     is_ads = data.get('is_ads')
     duration = data.get('duration')
@@ -230,15 +233,15 @@ def data_to_topic(data):
     desc = challenge_info.get('desc')
     # aweme_list
     aweme_list = data.get('aweme_list')
-    videos = []
-    for item in aweme_list:
-        video = data_to_video(item)
-        videos.append(video)
+    # videos = []
+    # for item in aweme_list:
+    #     video = data_to_video(item)
+    #     videos.append(video)
     return Topic(
         id=id,
         view_count=view_count,
         user_count=user_count,
         name=name,
-        desc=desc,
-        videos=videos
+        desc=desc
+        # videos=videos
     ) if id else None

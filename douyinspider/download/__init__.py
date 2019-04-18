@@ -1,2 +1,2 @@
 from douyinspider.download.downloader import Downloader
-from douyinspider.download.file import getDownloadPath, getMusicDownloadPath, getVideoDownloadPath
+from douyinspider.download.file import getDownloadPath, getMusicDownloadPath, getVideoDownloadPath, getCategoryDownloadPath

@@ -1,19 +1,19 @@
 from douyinspider.hot import category,billboard
-from douyinspider.download import Downloader, getDownloadPath, getMusicDownloadPath, getVideoDownloadPath
+from douyinspider.download import Downloader, getDownloadPath, getMusicDownloadPath, getVideoDownloadPath, getCategoryDownloadPath
 from douyinspider.structures import Topic,Video,MusicCollection,Music
 from douyinspider.person import favorite,post
 from douyinspider.music import music_collection
 
 # 下载分类视频
 def downloadCategory():
-    current_path = getDownloadPath('category')
-    downloader = Downloader(current_path)
+    downloader = Downloader()
     # 设置maxCursor最大请求偏移
     for item in category(maxCursor=50):
         if isinstance(item, Topic):
-            videos = item.videos
+            current_path = getCategoryDownloadPath(item.name)
+            videos = item.videos(5) #下载前5页的数据
             for video in videos:
-                downloader.download_mp4(video.play_url, video.id)
+                downloader.download_mp4_path(video.play_url, video.id, current_path)
 
 
 # 下载广告推广视频

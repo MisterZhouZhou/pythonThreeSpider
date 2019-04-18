@@ -36,7 +36,6 @@ def fetch(url, **kwargs):
         :param kwargs: other requests params
         :return: json of response
         """
-        print(kwargs)
         kwargs.update({'verify': False})
         kwargs.update({'timeout': fetch_timeout})
         response = requests.get(url, **kwargs)

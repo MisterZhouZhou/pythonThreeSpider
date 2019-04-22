@@ -21,7 +21,7 @@ class MyTestCase(unittest.TestCase):
         capabilities = {
             "platformName": "Android",
             # Mobile OS类型
-            "platformVersion": "7.1.1",
+            "platformVersion": "4.4",
             # Mobile OS版本
             "deviceName": "3216e430",
             # adb devices

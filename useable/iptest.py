@@ -1,8 +1,6 @@
 #coding=utf-8
-import sys
-import os
+
 import re
-import urllib
 import requests
 import subprocess
 from bs4 import BeautifulSoup
@@ -46,11 +44,21 @@ def tracerouteIP(ip):
             except IndexError as e:
                 print('error'+line)
         else:
-            print('===', str(line))
+            search_obj2 = re.search(r".?\d  * * *", str(line)).group()
+            if int(search_obj2) > 11:
+                break
+
+
+# 获取域名的ip地址
+def getIP(domain):
+    import socket
+    my_address = socket.getaddrinfo(domain, 'https')
+    return my_address[0][4][0]
+
 
 if __name__ == '__main__':
-    import subprocess
-    signature = subprocess.getoutput('echo  %s' % user_id)
-    tracerouteIP('https://www.baidu.com')
+    # search_obj2 = re.search(r".?\d  * * *", str(b'18  * * *\n')).group()
+    # print(int(search_obj2) > 11)
+    tracerouteIP(getIP('www.baidu.com'))
 
 
